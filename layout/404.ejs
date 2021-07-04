@@ -1,0 +1,36 @@
+<style type="text/css">
+    /* don't remove. */
+    .about-cover {
+        height: 90.2vh;
+    }
+</style>
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+        <div class="row">
+            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+                <div class="brand">
+                    <div class="title center-align">
+                        404
+                    </div>
+                    <div class="description center-align">
+                        <%= page.description %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if (theme.banner.enable) { %>
+    <script>
+        // 每天切换 banner 图.  Switch banner image every day.
+        const base = "https://blog-summer-top.oss-cn-hangzhou.aliyuncs.com/image/banner"
+        const file = `${new Date().getDay()}.jpg`
+        var bannerUrl = `${base}/${file}`
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    </script>
+<% } else { %>
+    <script>
+        $('.bg-cover').css('background-image', 'https://blog-summer-top.oss-cn-hangzhou.aliyuncs.com/image/banner/0.jpg');
+    </script>
+<% } %>
