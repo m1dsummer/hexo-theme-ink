@@ -4,7 +4,7 @@
 
 主要是删除了首页的轮播图和文章卡片上的图片,对小带宽服务器更加友好，并且修改了大量 css 实现一个亮色主题。
 
-在线演示:[https://blog.m1dsummer.top](https://blog.m1dsummer.top)
+在线演示:[https://blog.summ3r.top](https://blog.summ3r.top)
 
 ![](demo.png)
 
