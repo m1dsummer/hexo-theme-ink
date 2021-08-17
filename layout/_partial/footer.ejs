@@ -35,8 +35,8 @@
                     ></span>&nbsp;人
             </span>
             <% } %>
-            <br>
             <% if (theme.time.enable) { %>
+            <br>
             <span id="sitetime">载入运行时间...</span>
             <script>
                 function siteTime() {
@@ -81,8 +81,8 @@
                 setInterval(siteTime, 1000);
             </script>
             <% } %>
-            <br>
             <% if (theme.icp.enable) { %>
+            <br>
             <span id="icp"><img src="<%- theme.jsDelivr.url %><%- url_for('/medias/icp.png') %>" style="vertical-align: text-bottom;" />
                 <a href="<%- url_for(theme.icp.url) %>" target="_blank"><%= theme.icp.text %></a>
             </span>
